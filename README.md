@@ -1,5 +1,5 @@
 ## This is application development ----- by Huy Nguyen
-* This application done by "shell.puv.fi" environment
+* This application done in "shell.puv.fi" environment
 # List of Content
    1. Congfiguration Instruction
    2. Installation Instruction
