@@ -5,6 +5,7 @@
 
 char *strcat(char *dest,const char *src);
 char ** findduplicate(int size, int *amount){
+	// Read the file
     FILE * file;
     file=fopen("wlist.txt", "r");
     if(file==NULL){
@@ -39,6 +40,7 @@ char ** findduplicate(int size, int *amount){
 		}
 	}
 	fclose(file);
+	// Realloc the size of duplicates
 	duplicates=realloc(duplicates,(*amount+1)*sizeof(char));
 	return duplicates;
 }

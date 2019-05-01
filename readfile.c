@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 char ** readfile(int *size){
+	// Open file text to get how many words in this file
     FILE * file;
 	char *ch=(char*)malloc(40);
     file=fopen("wlist.txt", "r");
@@ -13,8 +14,9 @@ char ** readfile(int *size){
     while(fscanf(file,"%s",ch) !=EOF){
 		*size=*size+1;
     } 
-//	printf("ccc: %d", *size);
 	fclose(file);
+	// Open it agin and read the conten of file, return the 2-d array which 
+	// contains the words in this file
 	file=fopen("wlist.txt", "r");
 	char **str=malloc(*size*sizeof(char*));
 	int j=0;

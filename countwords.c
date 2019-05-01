@@ -2,6 +2,8 @@
 #include "countwords.h"
 #include <stdlib.h>
 #include <string.h>
+// This function returns an array contains the number of words starting by 
+// letter 'A', 'B', ... and how many lettet 'A', 'B',.... in file text
 int * countwords(char **str, int size){
 	int * number=(int*)malloc(52*sizeof(int));
 	for(int j=0; j<52;j++){
@@ -14,9 +16,6 @@ int * countwords(char **str, int size){
 		for(int k=0;k< strlen(str[j]);k++)
 			number[(str[j][k]-65)*2+1]+=1;
 	}
-//	for(int k=0;k<52;k++){
-//		printf("%d\n",number[k]);
-//	}
 	return number;
 }
 

@@ -6,13 +6,13 @@
 #include <string.h>
 #include "screen.h" 
 int main(){
-	int size=0;
-	char **str= readfile(&size);
-	int *number=countwords(str, size);
-	int number_duplicates=0;
-	char **duplicates=findduplicate(size,&number_duplicates);
-	barChart(number, duplicates, number_duplicates);
-	resetColors();
+	int size=0;// how may words in file text
+	char **str= readfile(&size);// An array contains the words
+	int *number=countwords(str, size);// Count the words
+	int number_duplicates=0;// how many duplicate words 
+	char **duplicates=findduplicate(size,&number_duplicates);// Get the duplicate words
+	barChart(number, duplicates, number_duplicates);// Display bartchart
+	resetColors();// ResetColor
 	getchar();
 	return 0;
 }
