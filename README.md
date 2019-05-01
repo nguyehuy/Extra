@@ -17,7 +17,7 @@ executable file, which is file "output.out"
   * Now sound.out should be in the same directory
 ## 3. Operating Instructions
   * Use command "/output.out" without argument to see a barchart 
-of how many words starting by letter 'A', 'B',...(the red colums) and how many letters 'A', 'B',... in the file 'wlist.txt'
+of how many words starting by letter 'A', 'B',...(the CYAN colums) and how many letters 'A', 'B',... in the file 'wlist.txt'(GREEN colum)
   * Press "Ctrl"+"c" to stop program
   * Use command "make clean" to delete all the executable file.
 ## 4. List of files

@@ -23,7 +23,7 @@ void barChart(int * array, char **duplicates, int number_duplicates){
 			for (int j=0; j<array[i/3]/4; j++){
 					printf("\033[%d;%dH", 45-j, i+1); // j is row and i is column
 					if((i/3)%2==0){ 
-						setColors(RED);// Display red colums which is the colums
+						setColors(CYAN);// Display red colums which is the colums
 						// how many words are starting with letter 'A,'B'
 					}else{
 						setColors(GREEN);// Display red colums which is the colums
@@ -41,7 +41,7 @@ void barChart(int * array, char **duplicates, int number_duplicates){
 		}else if(array[i/3]>4||array[i/3]!=0){
 			printf("\033[45;%dH", i+1);
 			if((i/3)%2==0){
-                setColors(RED);
+                setColors(CYAN);
             }else{
                 setColors(GREEN);
             }
@@ -54,7 +54,7 @@ void barChart(int * array, char **duplicates, int number_duplicates){
 		// We do nor display colums which value  0
 		}else{
 			if((i/3)%2==0){
-                setColors(RED);
+                setColors(CYAN);
             }else{
                 setColors(GREEN);
             }
